@@ -311,7 +311,7 @@ provide your applications with direct access to the processor and memory of the 
 environments or for applications where you want to use your own hypervisor. To find the right instance for your workload, 
 visit the EC2 instance types page. You can also use the AWS Compute Optimizer to get recommendations on optimal AWS Compute resources 
 for your workloads to reduce costs and improve performance.
-====================================================================================================================================
+=====================================================================================
 What is Hypervisor ? and its types ?
 ans;-
 Hyper visor is a firmware or low level program that acts as a virtual machine manager. A system on which hypervisor
@@ -319,13 +319,13 @@ is running one or more virtual machines is known as host machine. Each virtual m
 hypervisor into two categories :
 1. Type 1 / native / Bare-Metal
 2.Type 2 / Hosted
-======================================================================================================================================
+===========================================================================================
 Where we use hypervisor ?
 ans;-
 A hypervisor is a software that you can use to run multiple virtual machines on a single physical machine. Every virtual machine
 has its own operating system and applications. The hypervisor allocates the underlying physical computing resources such as 
 CPU and memory to individual virtual machinesas required.
-=========================================================================================================================================
+=======================================================================================
 Steps to create an EC2 instance.
 ans;= following steps
 Sign in to the AWS Management Console
@@ -336,10 +336,10 @@ Create a key pair
 Configure Security Group
 Add Storage
 Review and Launch
-======================================================================================================================================
+==============================================================================================
 EC2 Instance state ?
 ans;= 1> 2/2 =helthey   2> 1/2 =software error    3> 0/1=hardware error 
-=====================================================================================================================================
+=================================================================================================
 How many types of EC2 Instance-State codes ?
 ans;-
 0: pending
@@ -348,40 +348,40 @@ ans;-
 48: terminated
 64: stopping
 80: stopped
-===============================================================================================================================
+==================================================================================
 What is the meaning of server hibernating mode ?
 ans;=
 In computing, hibernation is a power-saving mode that saves the current state of a computer's system to the hard drive before
 shutting down. It's also known as "suspend to disk" or "Safe Sleep" on Macintosh computers. 
 Both shut down and hibernated systems may consume standby power unless they are unplugged. Hibernation is a means of avoiding
 the burden of saving unsaved data before shutting down and restoring all running programs and re-opening documents and browser tabs.
-====================================================================================================
+======================================================================================
 AWS Amazon EC2 Instance types ?
 ans;-General Purpose Instances,Compute Optimized Instances ,Memory-Optimized Instances,Storage Optimized Instances,Accelerated Computing Instances.
-==================================================================================================================================
+============================================================================================
 How many types of status checks happen in aws ?
 ans;-Amazon EC2, there are two types of status checks, commonly known as "instance status checks" and "system status checks.
 " These checks help ensure the health and proper functioning of your EC2 instances and the underlying infrastructure.
-====================================================================================================================================
+=====================================================================================
 When we see the global view option in ec2 service ?
 ans;-
-===============================================================================================================================
+====================================================================================
 When we logged into the cloud account by default why do we always jump into the north virginia region, why it’s most popular ?
 ans;-
-=============================================================================================================================
+============================================================================================
 ans;- aws  there might be changes or updates to cloud services, so it's always a good idea to check the current information. However,
 as of that time, the U.S. East (North Virginia) region of Amazon Web Services (AWS) was one of the most popular and heavily used regions
-================================================================================================================================
+==========================================================================================================
 What are EBS Volumes and its types ?
 ans;-General Purpose SSD,Provisioned IOPS SSD,Throughput Optimized HDD ,Cold HDD ,Magnetic (standard
-====================================================================================================================================
+============================================================================================
 Purpose of Using EBS volumes ?
 ans;- 1.Data backup and disaster recovery: Customers can use EBS snapshots to capture production data for testing and other purposes
       2.Primary storage: For data that needs frequent updates, such as system drives and database applications
-===================================================================================================================================
+============================================================================================
 How many types of purchasing options do we have in aws ec2 ?
 ans;-On-Demand Instances ,Reserved Instances ,Savings Plans ,Spot Instances ,Dedicated Hosts ,Dedicated Instances,Capacity Reservations
-==================================================================================================================================
+===============================================================================================
 Difference between AWS AMI Image & AWS Template ?
 ans;- aws ami
 1.ami are primarily used to create virtual machine (ec2 instance) by providing a pre -configured snpshot of the root file system including
@@ -395,24 +395,24 @@ version-control your entire aws environment
 2.used for provisioning and managing a complate set of aws resources
 3.manages the complate lifecycle of aws resources supporteding creation update and deletion
 4.created managed and executed thought the aws cloud formation  service
-================================================================================================================================
+============================================================================================
 What is NIC & it’s types ?
 ans;- nic is a hardware component without which a computer cannot be connected over a network. It is a circuit board installed in 
 a computer that provides a dedicated network connection to the computer. It is also called network interface controller
 types of nic ;-Internal Network Cards,External Network Cards
-================================================================================================================================
+===========================================================================================
 What is elastic IP ? & WHY were we used ?
 ans;-a static IPv4 address that's designed for dynamic cloud computing. It's a static public address associated with your AWS account. 
      These are ipv4 address which are used to connect the instance from internet, they are chargedif the instances are not attached to it
-=========================================================================================================================================
+========================================================================================
 What is the snapshot of why we use it ?
 ans;-It can back up the data on the EBS Volume. Snapshots are incremental backups.
 • If this is your first snapshot it may take some time to create. Snapshots are point in time
 copies of volumes.
-=======================================================================================================================================
+==============================================================================================
 What is the lifecycle manager in snapshot ?
 ans;-Lifecycle Manager provides a simple and automated way for you to manage your EBS snapshot backups
-==================================================================================================================================
+==================================================================================================
 How does the Amazon lifecycle manager work ?
 ans;-S3 Lifecycle Manager automates the management of objects in S3 buckets over time. 
 You can define rules to transition objects between storage classes or expire them after a specified period, helping optimize storage costs. 
@@ -422,7 +422,7 @@ Select the "Management" tab for the bucket, and then choose "Lifecycle"
 Create rules specifying transitions, expiration actions, or both. 
 Specify the actions to be taken, such as transitioning to a different storage class, moving to Glacier, or deleting objects.
 Review your configuration, and save the lifecycle policy.
-=================================================================================================================================
+===================================================================================
 Difference between Security Group & NACL ?
 ans security group
 1. It supports only allow rules, and by default, all the rules are denied. You cannot deny the rule for establishing a connection.
@@ -432,25 +432,25 @@ ans security group
 1.It supports both allow and deny rules, and by default, all the rules are denied. You need to add the rule which you can either allow or deny it.
 2.It is associated with a subnet.
 3.It is the second layer of defense.
-=========================================================================================================================================
+======================================================================================
 How many IP Addresses can we attach to the instances ?
 ans;- Amazon Web Services (AWS), a Virtual Private Cloud (VPC) can have a maximum of 5 IP addresses per Elastic Network Interface (ENI) 
 and a maximum of 8,000 IP addresses per VPC. This means that a VPC can have a maximum of 8,000 public IP addresses, if you are using
 the IPv4 addressing protocol.
-====================================================================================================================================
+==========================================================================================
 How many types of volume states do we have ?
 ans;- creating ,avilable ,in use,deleting,deleted,error
-===============================================================================================================================
+==============================================================================
 What is a key pair, and its types ?
 Ans:Key-pairs are secure login information for your instances/virtual machines. To connect to the
 instances we use key-pairs that contain a public-key and private-key.
-=================================================================================================================================
+=================================================================================
 What is load balancer and its types ?
 ans;-A load balancer is a device or service that distributes incoming network traffic across multiple servers or resources t
 o ensure that no single server becomes overwhelmed with too much traffic. Load balancing is commonly used to enhance the availability,
 reliability, and scalability of applications or websites by evenly distributing the incoming requests.
 types of loadblancer;-1.Application Load Balancer 2.Network Load Balancer 3.Classic Load Balancer 
-==============================================================================================================================
+=============================================================================
 Features of Load Balancers ?
 ans;-Distributes traffic among multiple servers to avoid overload.
 Checks server health regularly to ensure traffic goes to healthy servers.
@@ -460,35 +460,35 @@ Associates with security groups to provide an additional layer of security.
 Supports real-time communication applications like chat (ALB, NLB).
 Handles traffic over the newer IPv6 protocol
 
-=============================================================================================================================
+===========================================================================================
 What is ASG ? & Its types ?
 ans;-Auto scaling allows you to automatically scale-up and scale-down the number of instances
 depending on the CPU utilization or memory utilization.
 types of auto scalling;-1. horizontal scaling 2.vertical scaling
-==========================================================================================================================
+==========================================================================================
 What is a Health Check ?
 ans;-Auto Scaling in AWS, a health check is like a regular checkup for your instances. It's a way for Auto Scaling to make sure each 
 instance in your group is doing well and ready to handle traffic. 
 
 The health check monitors things like if the instance is responding, reachable, and overall in good shape.
-=====================================================================================================================
+=====================================================================================================
 What is the threshold ?
 ans;-threshold is like a limit or a point at which Auto Scaling takes action. It's a set level or condition that, when reached, triggers 
 a response from Auto Scaling.
 Example;
  Imagine you set a CPU usage threshold at 70%. This means that if any of your instances' CPU usage goes beyond 70%, it's a 
 signal for Auto Scaling to take action.
-========================================================================================================================
+===============================================================================================
 What is the group of LB ?
 ans;-
-=======================================================================================================================================
+=====================================================================================================
 Difference between Web server & Application server ?
 ans;- web server
 1.In web server,HTML and HTTP protocols are used.
 2.Web server encompasses web container only.
 3.Web server is useful or fitted for static content.	
 4.Web Server examples are Apache HTTP Server , Nginx.
---appliction server----------------------------------------------------------------------------------------------------------------
+--appliction server--------------------------------------------------------------------------------------
 1.While in this, GUI as well as HTTP and RPC/RMI protocols are used.
 2.While application server encompasses Web container as well as EJB container.
 3.Whereas application server is fitted for dynamic content.
