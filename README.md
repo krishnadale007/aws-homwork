@@ -45,11 +45,11 @@ ans;-1.Amazon Resource Names is uniquely identify AWS resources. We require an A
      =============================================================================================================================================
 13.what is tag ?
 ans:- tag is identices
-=================================================================================================================================================================================
+======================================================================================================================
 14.Difference between Block storage & Object Storage ?
-**********************************************************************************************************************************************
+==========================================================================
 block storage
-**********************************************************************************************************************************************
+
 Block storage has a powerful performance with transactional data and database
 The higher the distance among application and storage, the greater the latency.
 Addressing needs limits scalability.
@@ -58,9 +58,9 @@ Block storage will take any file apart into individual data blocks. It stores th
 High Performance
 High speed, Low latency, Redundancy, etc.
 
-*********************************************************************************************************************************************
+=======================================================================================
 object storage
-*********************************************************************************************************************************************
+
 Object storage performs great for high flow throughput and big content.
 Using Object storage, data can be saved within multiple regions.
 Object storage can scale boundlessly to petabytes.
@@ -73,7 +73,7 @@ Resource optimization, reduced cost, faster data improvement, infinite scalabili
 Difference between static website & dynamic website ?
 ============================================================================================================================================
 static website
-*********************************************************************************************************************************************
+
 In static web pages, Pages will remain same until someone changes it manually
 Static Web Pages are simple in terms of complexity.
 In static web pages, Information are change rarely.
@@ -83,7 +83,7 @@ Static web pages are written in languages such as: HTML, JavaScript, CSS, etc.
 Static web pages does not contain any application program .
 ---------------------------------------------------------------------------------------------------------------------------------------------
 dynamic website
-*********************************************************************************************************************************************
+
 In dynamic web pages, Content of pages are different for different visitors
 Dynamic web pages are complicated.
 In dynamic web page, Information are change frequently
