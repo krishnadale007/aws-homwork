@@ -42,7 +42,7 @@ ans;-
 12.What is ARN ? What are the fields in ARN ?
 ans;-1.Amazon Resource Names is uniquely identify AWS resources. We require an ARN when you need to specify a resource 
      2.arn:partition:service:region:account-id:resource
-     =========================================================================================================
+========================================================================================     
 13.what is tag ?
 ans:- tag is identices
 ========================================================================================
