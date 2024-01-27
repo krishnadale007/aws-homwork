@@ -7,45 +7,45 @@ Policies:-  define permissions. They can be attached to users, groups, or roles 
 Access Keys and Certificates: Credentials used to access AWS programmatically aws resource.
 MFA (Multi-Factor Authentication) Devices:-  MFA to increase the security of your AWS environment.Signing in with MFA requires an authentication code
 from an MFA device ,mfa devices ex;-Google Authenticator,Microsoft Authenticator etc
-===================================================================================================================================================================
+==================================================================================================================
 2.Deployment model in IAM ?
 ans:-
-============================================================================================================================================================
+=================================================================================================================
 3.Identities in IAM ?
 ans;-An IAM identity represents a human user or programmatic workload, and can be authenticated and then authorized to perform actions in AWS
-============================================================================================================================================================
+===================================================================================================================
 4.What is an IAM User ?
 ans:-IAM user is a resource in IAM that has associated credentials and permissions. An IAM user can represent a person or an application that uses its credentials and use
 aws services or resources
-==============================================================================================================================================================
+=========================================================================================================================
 5.What is the IAM Group ?
 ans;-the group is an identity that specifies a collection of IAM users and Groups make permissions easier to manage for large sets of users.
-=============================================================================================================================================================
+=========================================================================================================================
 6.What is the IAM Policy ?
 ans;-policies define permissions for an action regardless of the method that you use to perform the operation ex-aws cli ,s3,ec2 etc
-============================================================================================================================================================
+================================================================================================================================
 7.What is the IAM Role ?
 ans;-A role is a set of permissions that grant access to actions and resources in AWS. These permissions are attached to the role, not to an IAM User or a group.
 ==========================================================================================================================================================
 8.Where do we attach Identity Based Policy ?
 ans;-Identity-based policies are attached to an IAM user, group, or role. 
-=======================================================================================================================================================
+=================================================================================================================================
 9.Where do we attach Resource Based Policy ?
 ans;- resource-based policies attach to Amazon S3 buckets, Amazon SQS queues, VPC endpoints, and AWS Key Management Service encryption keys.
-=====================================================================================================================================================
+===============================================================================================================================
 10.If one user has created it by default, which permission has been assigned to that user ?
 ans;-that user iam full access either administrator full access
-===================================================================================================================================================
+=================================================================================================================================
 11.What is dominator policy ?
 ans;-
-===================================================================================================================================================
+=================================================================================================================================
 12.What is ARN ? What are the fields in ARN ?
 ans;-1.Amazon Resource Names is uniquely identify AWS resources. We require an ARN when you need to specify a resource 
      2.arn:partition:service:region:account-id:resource
-     =============================================================================================================================================
+     =========================================================================================================
 13.what is tag ?
 ans:- tag is identices
-======================================================================================================================
+========================================================================================
 14.Difference between Block storage & Object Storage ?
 ==========================================================================
 block storage
@@ -92,7 +92,7 @@ In dynamic web pages, database is used.
 Dynamic web pages are writhn in languages such as: CGI, AJAX, ASP, ASP.NET, etc.
 Dynamic web pages contains application program for different services.
 ====================================.========================================================================================================
-What are the naming rules ?
+16.What are the naming rules ?
 ans;-Bucket names must be between 3 (min) and 63 (max) characters long.
 Bucket names can consist only of lowercase letters, numbers, dots (.), and hyphens (-).
 Bucket names must begin and end with a letter or number.
@@ -100,76 +100,76 @@ Bucket names must not contain two adjacent periods.
 Bucket names must not be formatted as an IP address (for example, 192.168.5.4).
 Bucket names must not start with the prefix xn--.
 ============================================================================================================================================
-What is the major resource of S3 Bucket ?
+17.What is the major resource of S3 Bucket ?
 ans;-resource of s3 bucket is create bucket,object storage,access control,versioning,lifecycle rule,replication rule,storage class,kms,
 static website hosting,sns,cloudtrail,transper accleration,etc
 ==========================================================================================================================================
-Why do we need to host static websites instead of dynamic websites ?
+18.Why do we need to host static websites instead of dynamic websites ?
 ans;-Static websites typically have lower hosting costs as they don't require server-side processing.
 Static websites are simpler to set up and maintain.
 They load faster because there's no server-side processing, making them more responsive to user requests.
 ==========================================================================================================================================
-What is versioning & Why do we need versioning ?
+19.What is versioning & Why do we need versioning ?
 ans;- S3 Versioning feature to preserve, retrieve, and restore every version of every object stored in your buckets.
 In software development, versioning allows development teams to keep track of changes they make to the project code. The changes may include new functions,
 features or bug fixes.
 ==========================================================================================================================================
-What are the objects and types of objects that we are uploading into the S3 Bucket ?
+20.What are the objects and types of objects that we are uploading into the S3 Bucket ?
 ans:-s3 object uploading images, backups, data, movies,any other objects and types of objects file,logs,databases,Archives
 ==========================================================================================================================================
-Why is MFA Delete important in S3 Bucket object level ?
+21.Why is MFA Delete important in S3 Bucket object level ?
 ans;-This adds an extra layer of protection to prevent accidental or unauthorized deletions. To block accidental or malicious deletion.
 Prevents Accidental Deletions.
 Enhances Security.
 Secures Critical Data.
 Prevents Malicious Actions.
 ============================================================================================================================================
-What is S3 Multipart upload ?
+22.What is S3 Multipart upload ?
 ans;-Simple Storage Service (S3) that allows you to upload large objects in parts.
 Instead of uploading the entire object in a single request, you can break it into smaller parts and upload them concurrently. 
 This method is particularly useful for large files, as it provides benefits such as improved performance, fault tolerance, and the ability to resume uploads.
 
 ============================================================================================================================================
-What are the storage classes in Amazon S3 ?
+23.What are the storage classes in Amazon S3 ?
 ans;-there are s3 storage classes-1. Standard 2.Intelligent-Tiering 3.Standard-IA (Infrequent Access) 4.One Zone-IA 5.Glacier 6.Glacier Deep Archive
 ===========================================================================================================================================
-What is ACL ?
+24.What is ACL ?
 ans:-acl stands for Access Control List. An Access Control List is a list of permissions associated with an object or
 a bucket that specifies which AWS accounts or groups are granted access and what actions are allowed or denied.
 ==========================================================================================================================================
-Why do we need ACL ?
+25.Why do we need ACL ?
 ans;-Access Control Lists (ACLs) are essential for controlling and managing access to resources, such as buckets and objects, 
 in Amazon S3 and other cloud services
 ==========================================================================================================================================
-What is a Life cycle policy ? Why do we need to use the life cycle rule ?
+26.What is a Life cycle policy ? Why do we need to use the life cycle rule ?
 ans;-lifecycle policy storage cost optimization ,lifecycle rule is s3 object automatically class change in our set opration
 ==========================================================================================================================================
-How can we make our bucket public ?
+27.How can we make our bucket public ?
 ans:-firstly s3 open go to bucket and open then permission go on bucket policy is public
 =========================================================================================================================================
-Aws pricing factor of the S3 Service.
+28.Aws pricing factor of the S3 Service.
 ans;-aws pricing factor is estimate the cost of using the s3  service.
 =========================================================================================================================================
-How can we make our object public ?
+29.How can we make our object public ?
 ans;-yes., i can change my s3 bucket ojject is bublic --step= open the bucket and select the object and go to the action then make acl object public
 =====================================================================================================================================
-How can we configure the static website logs in s3 ?
+30.How can we configure the static website logs in s3 ?
 ans;- s3-->Permissions-->Edit Bucket Policy-->Block all public access-->uncheck-->Save Changes
 =======================================================================================================================================
-what is cors ?
+31.what is cors ?
 ans;-CORS stands for Cross-Origin Resource Sharing. It is a security feature implemented by web browsers that controls how web pages in
 one domain can request and interact with resources hosted on another domain.
 ========================================================================================================================================================
-What is S3 Inventory ?
+32.What is S3 Inventory ?
 ans;-
 Amazon S3 Inventory is a feature provided by Amazon Simple Storage Service (S3), which is a scalable and secure object storage 
 service offered by Amazon Web Services (AWS). S3 Inventory enables you to generate reports about your S3 objects and their metadata on
 a regular basis. These reports can provide valuable insights into your object storage, helping you with tasks such as compliance, auditing, and data lifecycle management.
 ========================================================================================================================================
-Why do we need ACL ?
+33.Why do we need ACL ?
 ans;- access control list is using spacial permission {read ,write ,exicute} 
 ======================================================================================================================================
-What is a Life cycle policy ? Why do we need to use the life cycle rule ?
+34.What is a Life cycle policy ? Why do we need to use the life cycle rule ?
 ans;
 
 
@@ -177,13 +177,13 @@ ans;
 more(even if previous data is of no use after some time). So, to avoid extra expenses and to maintain data as per requirement only 
 life cycle management is needed. 
 ====================================================================================================================================
-How can we make our bucket public ?
+35.How can we make our bucket public ?
 ans;- a bucket object is using publically and access for data .
 ==================================================================================================================================
-How can we give public access to our bucket ?
+36.How can we give public access to our bucket ?
 ans;-s3 service open and go to permission and block public access edit and save change
 ==================================================================================================================================
-Aws pricing factor of the S3 Service.
+37.Aws pricing factor of the S3 Service.
 ans;-Storage Class
 Storage Amount GB orTB
 Requests
