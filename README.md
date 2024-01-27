@@ -6,7 +6,9 @@ Policies:-  define permission
 MFA (Multi-Factor Authentication) Devices
 ====================================================================================================
 2.Deployment model in IAM ?
-ans:-
+ans:-1.On-premises
+2.Cloud
+3.Hybrid IAM platform
 =================================================================================================================
 3.Identities in IAM ?
 ans;-An IAM identity represents a human user or programmatic workload, and can be authenticated and then authorized to perform actions in AWS
@@ -35,13 +37,16 @@ ans;-that user iam full access either administrator full access
 =================================================================================================================================
 11.What is dominator policy ?
 ans;-
+
+Example- if in one group 5 members (users) are present in those users 1 user has administrator access it’s called dominator policy.
+
 =================================================================================================================================
 12.What is ARN ? What are the fields in ARN ?
 ans;-1.Amazon Resource Names is uniquely identify AWS resources. We require an ARN when you need to specify a resource 
      2.arn:partition:service:region:account-id:resource
 ========================================================================================     
 13.what is tag ?
-ans:- tag is identices
+ans:- Tags are key-value pairs that you can attach to AWS resources. Tags are used to label and categorize resources.
 ========================================================================================
 14.Difference between Block storage & Object Storage ?
 ==========================================================================
@@ -73,7 +78,6 @@ static website
 
 In static web pages, Pages will remain same until someone changes it manually
 Static Web Pages are simple in terms of complexity.
-In static web pages, Information are change rarely.
 In static web pages, Information are change rarely.
 In Static Web Pages, database is not used.
 Static web pages are written in languages such as: HTML, JavaScript, CSS, etc.
@@ -183,7 +187,7 @@ ans;-s3 service open and go to permission and block public access edit and save 
 37.Aws pricing factor of the S3 Service.
 ans;-Storage Class
 Storage Amount GB orTB
-Requests
+Requests pay
 Data Transfer
 Transfer Acceleration
 Data Retrieval 
@@ -251,7 +255,7 @@ Ans;-SNS stands for Simple Notification Service. SNS is a web service that makes
 notifications from the cloud. You can set up SNS to receive email notification or message notification.
 ====================================================================================================================================
 Why do we use SNS ?
-ans;-sNS is typically used for applications that need realtime notifications,
+ans;-SNS is typically used for applications that need realtime notifications,
 ===================================================================================================================================
 What are the different delivery formats and transports in AWS SNS ?
 ans;- delivery format is= HTTP, HTTPS, Email-JSON and SQS 
@@ -281,6 +285,7 @@ ans;-
 What is 10DLC in AWS ?
 ans;-Stands for 10-Digit Long Code
 It is related to SMS (Short Message Service) messaging. Specifically, it is a type of long code that is used for sending Application-to-Person (A2P) messages.
+========================================================================================================
 what is ec2 ?
 ans;-
 EC2 stands for Elastic Compute Cloud. EC2 is an on-demand computing service on the AWS cloud platform. 
@@ -364,8 +369,6 @@ When we see the global view option in ec2 service ?
 ans;-
 ====================================================================================
 When we logged into the cloud account by default why do we always jump into the north virginia region, why it’s most popular ?
-ans;-
-============================================================================================
 ans;- aws  there might be changes or updates to cloud services, so it's always a good idea to check the current information. However,
 as of that time, the U.S. East (North Virginia) region of Amazon Web Services (AWS) was one of the most popular and heavily used regions
 ==========================================================================================================
@@ -477,7 +480,7 @@ Example;
 signal for Auto Scaling to take action.
 ===============================================================================================
 What is the group of LB ?
-ans;-
+ans;- autoscaling load balancer
 =====================================================================================================
 Difference between Web server & Application server ?
 ans;- web server
@@ -609,7 +612,7 @@ instance
 3>. realtime elastic ip example in ;- web server running on an EC2 instance in your VPC, and you want to host a website with a consistent public IP address
 =======================================================================================================================================
 112.Can we attach one Production Elastic IP to the new Prod server ?
-ans;-
+ans;-yes
 =========================================================================================================================================
 113.How does ELB Affect a VPC ?
 ans;-
