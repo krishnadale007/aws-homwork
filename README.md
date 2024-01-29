@@ -46,7 +46,10 @@ ans;-1.Amazon Resource Names is uniquely identify AWS resources. We require an A
      2.arn:partition:service:region:account-id:resource
 ========================================================================================     
 13.what is tag ?
-ans:- Tags are key-value pairs that you can attach to AWS resources. Tags are used to label and categorize resources.
+ans:- Unique identity assign to an user or resources
+     It consist of key and value.
+     Key is an identifier and values provides information.
+     It will helpful to identity which user are from which environment like tester and developer.
 ========================================================================================
 14.Difference between Block storage & Object Storage ?
 ==========================================================================
@@ -171,10 +174,9 @@ a regular basis. These reports can provide valuable insights into your object st
 ans;- access control list is using spacial permission {read ,write ,exicute} 
 ======================================================================================================================================
 34.What is a Life cycle policy ? Why do we need to use the life cycle rule ?
-ans;
-
-
-2>Assume a lot of data is updated in an S3 bucket regularly, and if all the data is maintained by standard storage it will cost you
+ans;1>Lifecycle policy is a set of rules that you create to automatically manage and organize
+your objects stored in a bucket over time.
+   2>Assume a lot of data is updated in an S3 bucket regularly, and if all the data is maintained by standard storage it will cost you
 more(even if previous data is of no use after some time). So, to avoid extra expenses and to maintain data as per requirement only 
 life cycle management is needed. 
 ====================================================================================================================================
@@ -198,7 +200,7 @@ How can we make our object public ?
 ans;- because publically access for s3 object data
 =================================================================================================================================
 How can we configure the static website logs in s3 ?
-ans;-
+ans;-Create cloud trails and mention bucket where you want to store logs.
 ================================================================================================================================
 What does it mean by Requester pays ?
 ans;-Requester Pays, the person or entity making requests to the bucket is responsible for the associated costs.
@@ -223,16 +225,23 @@ ans;- open a cloudtrail service and create trail-->trail name-->storage location
 review and create.
 =================================================================================================================================
 How can we enable logging for S3 bucket using cloud trails ?
-ans;-
+ans;-For that go to S3 console
+    create cloud trail mention s3 buck where you want to store logs
+    Select events which event you want to record 
+    create 
+
 =================================================================================================================================
 How do you get the list of all created trailers in your production account ?
-ans;-
+ans;- go to cloudtrail service
+    on the dashboard click on trails
 =================================================================================================================================
 Can we create a trail for a multi region, if yes then how can we configure it ?
-ans;-
+ans;when you create trail it automatically created for multi regions 
 =================================================================================================================================
 How can we disable the logging for certain events, services in cloud trail, If yes so explain how ?
-ans;-
+ans;- click on cloutrail
+    edit events if you want to disable for managenmets events
+    click on managements events after deselect and saved changes
 =================================================================================================================================
 Real time use case of cloud trail ?
 ans;-Security and Compliance Monitoring-Detecting Unauthorized Access.
@@ -280,7 +289,9 @@ Amazon S3 (Simple Storage Service)
 Amazon CloudWatch
 =====================================================================================================================================
 What is the difference between SNS FIFO & Standard while creating the SNS topic.
-ans;-
+ans;- SNS provides 2 types of message delivery
+    fifo:- in FIFO when you subscribe SNS fifo topic in subscribers you have only 1 protocol that is SQS 
+    Standard:- here you have mutiple options of protocols like SQS, Lambda, email, http, https, sms
 ====================================================================================================================================
 What is 10DLC in AWS ?
 ans;-Stands for 10-Digit Long Code
@@ -613,10 +624,13 @@ instance
 =======================================================================================================================================
 112.Can we attach one Production Elastic IP to the new Prod server ?
 ans;-yes
-=========================================================================================================================================
+==================================================================================================================
 113.How does ELB Affect a VPC ?
-ans;-
-=============================================================================================================================
+ans;-Improved avaibility and fault tolerance means ALB monitor instances which are healthy or not and forward request to healthy instances
+    ELB evenly distributes incoming traffic among multiple EC2 instances.
+    number of incoming requests increases, ELB can distribute the load across additional instances.
+    ELB evenly distributes traffic across instances in all available Availability Zones.
+===================================================================================================================
 114.What are the limitations of VPC’s, Gateway and subnets ?
 ans;-limitations of VPC
 The default limit for VPCs per region is 5.
